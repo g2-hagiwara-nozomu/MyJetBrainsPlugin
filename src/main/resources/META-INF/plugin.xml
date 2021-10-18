@@ -20,8 +20,8 @@
         <!-- copy path -->
         <action id="com.github.g2hagiwaranozomu.myjetbrainsplugin.CopyPathAction"
                 class="com.github.g2hagiwaranozomu.myjetbrainsplugin.CopyPathAction"
-                text="Copy Path From Root"
-                description="Copy path from project root"
+                text="Copy absolute Path"
+                description="Copy absolute path"
                 icon="AllIcons.Actions.Copy">
             <keyboard-shortcut keymap="$default" first-keystroke="control alt C"/>
             <add-to-group group-id="EditorPopupMenu" anchor="first"/>

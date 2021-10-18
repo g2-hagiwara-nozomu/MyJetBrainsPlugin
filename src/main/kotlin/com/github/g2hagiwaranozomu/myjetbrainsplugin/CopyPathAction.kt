@@ -16,10 +16,8 @@ class CopyPathAction : AnAction()
 
         // pathの取得
         val absolutePath = virtualFile.path
-        val basePath = project.basePath ?: ""
-        val pathFromRoot = absolutePath.replace("$basePath/", "")
 
         // clipboardへのコピー
-        CopyPasteManager.getInstance().setContents(StringSelection(pathFromRoot))
+        CopyPasteManager.getInstance().setContents(StringSelection(absolutePath))
     }
 }
