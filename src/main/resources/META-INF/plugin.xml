@@ -23,7 +23,7 @@
                 description="Copy Absolute path"
                 icon="AllIcons.Actions.Copy">
             <keyboard-shortcut keymap="$default"/>
-            <add-to-group group-id="EditorPopupMenu/Copy Path" anchor="first"/>
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
         </action>
         <action id="com.github.g2hagiwaranozomu.myjetbrainsplugin.CopyFileNameAction"
                 class="com.github.g2hagiwaranozomu.myjetbrainsplugin.CopyFileNameAction"
@@ -31,7 +31,7 @@
                 description="Copy File Name"
                 icon="AllIcons.Actions.Copy">
             <keyboard-shortcut keymap="$default"/>
-            <add-to-group group-id="EditorPopupMenu/Copy Path"/>
+            <add-to-group group-id="EditorPopupMenu"/>
         </action>
     </actions>
 </idea-plugin>
