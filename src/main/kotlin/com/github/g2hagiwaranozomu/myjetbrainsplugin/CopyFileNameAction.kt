@@ -7,17 +7,19 @@ import com.intellij.openapi.ide.CopyPasteManager
 import java.awt.datatransfer.StringSelection
 
 
-class CopyPathAction : AnAction() 
+class CopyFileNameAction : AnAction() 
 {
     override fun actionPerformed(e: AnActionEvent) 
     {
         val virtualFile = e.getRequiredData(CommonDataKeys.VIRTUAL_FILE)
-        val project = e.getRequiredData(CommonDataKeys.PROJECT)
 
-        // pathの取得
+        // nameの取得
         val absolutePath = virtualFile.path
+        
+        // ファイル名の取り出し
+        val name = absolutePath.split("/").last()
 
         // clipboardへのコピー
-        CopyPasteManager.getInstance().setContents(StringSelection(absolutePath))
+        CopyPasteManager.getInstance().setContents(StringSelection(name))
     }
 }
